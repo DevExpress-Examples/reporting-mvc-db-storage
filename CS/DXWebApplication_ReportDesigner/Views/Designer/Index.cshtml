@@ -1,0 +1,42 @@
+﻿@model DXWebApplication_ReportDesigner.Models.IndexModel
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<link rel="stylesheet" type="text/css" href="~/Content/Index.css" />
+
+<h2>Report Catalog</h2>
+
+@using (Html.BeginForm()) {
+    <span>Use the form below to manage reports in the catalog.</span>
+    @Html.DevExpress().ListBoxFor(x => x.SelectedReportUrl, settings => {
+        settings.Name = "Url";
+
+        settings.Properties.TextField = "Url";
+        settings.Properties.ValueField = "Url";
+        settings.Properties.ValueType = typeof(string);
+            
+        settings.ControlStyle.CssClass = "reports";
+        settings.Width = 600;
+    }).BindList(Model.Reports).GetHtml()
+
+    @Html.DevExpress().Button(settings => {
+        settings.Name = "EditReportButton";
+        settings.RouteValues = new { Controller = "Designer", Action = "Design" };
+        settings.UseSubmitBehavior = true;
+
+        settings.Text = "Run Designer";
+        settings.ControlStyle.CssClass = "buttonSeparator";
+        settings.Width = 100;
+    }).GetHtml()
+
+    @Html.DevExpress().Button(settings => {
+        settings.Name = "DeleteReportButton";
+        settings.RouteValues = new { Controller = "Designer", Action = "Delete" };
+        settings.UseSubmitBehavior = true;
+
+        settings.Text = "Delete";
+        settings.Width = 100;
+    }).GetHtml()
+}
