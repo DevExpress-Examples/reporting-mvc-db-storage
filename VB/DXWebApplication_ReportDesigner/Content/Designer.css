@@ -1,0 +1,14 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+}
+
+.fullscreen {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.saveCloseAction {
+    background-image: url(/Content/SaveClose.png);
+}

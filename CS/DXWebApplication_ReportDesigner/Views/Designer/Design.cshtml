@@ -1,0 +1,38 @@
+﻿@model DXWebApplication_ReportDesigner.Models.DesignModel
+
+@{
+    ViewBag.Title = "Design";
+}
+
+<link rel="stylesheet" type="text/css" href="~/Content/Designer.css" />
+<script type="text/javascript">
+    function reportDesigner_CustomizeMenuActions(s, e) {
+        var saveItem = e.Actions.filter(function (x) { return x.text === 'Save' })[0];
+        saveItem.text = 'Save&Close';
+        saveItem.imageClassName = 'saveCloseAction';
+    }
+
+    function reportDesigner_SaveCommandExecuted(s, e) {
+        if (e.Result) {
+            window.location = '@Url.Action("Index")';
+        }        
+    };
+</script>
+
+@Html.DevExpress().ReportDesigner(settings => {
+    settings.Name = "reportDesigner";
+    
+    object newReportUrl = new { Controller = "Designer", Action = "AddNewReport", name = Model.NewName };
+    object existReportUrl = new { Controller = "Designer", Action = "UpdateReport", id = Model.Id };
+    settings.SaveCallbackRouteValues = Model.Id != 0 ? existReportUrl : newReportUrl;
+    
+    settings.Height = Unit.Percentage(100);
+    settings.ControlStyle.CssClass = "fullscreen";   
+     
+    settings.ClientSideEvents.CustomizeMenuActions = "reportDesigner_CustomizeMenuActions";
+    settings.ClientSideEvents.SaveCommandExecuted = "reportDesigner_SaveCommandExecuted";
+
+    if (Model.DataSource != null) {
+        settings.DataSources.Add("Categories", Model.DataSource);
+    }
+}).Bind(Model.Report).GetHtml()

@@ -1,0 +1,65 @@
+﻿@model DXWebApplication_ReportDesigner.Models.IndexModel
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<link rel="stylesheet" type="text/css" href="~/Content/Index.css" />
+
+<h2>Report Catalog</h2>
+
+@using (Html.BeginForm()) {
+    <span>Use the form below to manage reports in the catalog.</span>
+    @Html.DevExpress().ListBoxFor(x => x.SelectedReportId, settings => {
+        settings.Name = "Id";
+        
+        settings.Properties.TextField = "Name";
+        settings.Properties.ValueField = "Id";
+        settings.Properties.ValueType = typeof(int);
+            
+        settings.ControlStyle.CssClass = "reports";
+        settings.Width = 600;
+    }).BindList(Model.Reports).GetHtml()
+
+    @Html.DevExpress().Button(settings => {
+        settings.Name = "EditReportButton";
+        settings.RouteValues = new { Controller = "Designer", Action = "Edit" };
+        settings.UseSubmitBehavior = true;
+
+        settings.Text = "Edit";
+        settings.ControlStyle.CssClass = "buttonSeparator";
+        settings.Width = 100;
+    }).GetHtml()
+
+    @Html.DevExpress().Button(settings => {
+        settings.Name = "DeleteReportButton";
+        settings.RouteValues = new { Controller = "Designer", Action = "Delete" };
+        settings.UseSubmitBehavior = true;
+
+        settings.Text = "Delete";
+        settings.Width = 100;
+    }).GetHtml()
+}
+
+<hr />
+
+@using (Html.BeginForm()) {
+    @Html.DevExpress().Button(settings => {
+        settings.Name = "AddReportButton";
+        settings.RouteValues = new { Controller = "Designer", Action = "Add" };
+        settings.UseSubmitBehavior = true;
+
+        settings.Text = "New Report";
+        settings.Width = 100;
+        settings.ControlStyle.CssClass = "left buttonSeparator";
+    }).GetHtml()
+
+    @Html.DevExpress().TextBox(settings => {
+        settings.Name = "Name";
+    
+        settings.Properties.Caption = "New Report ID";
+        settings.ControlStyle.CssClass = "left";
+        settings.Width = 404;
+        settings.Height = 25;                
+    }).GetHtml()
+}
