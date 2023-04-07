@@ -1,0 +1,10 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+}
+
+.fullscreen {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}

@@ -1,0 +1,1 @@
+﻿<%@ Application Codebehind="Global.asax.cs" Inherits="Mvc_DbStorage_Sample.MvcApplication" Language="C#" %>

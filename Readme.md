@@ -1,29 +1,38 @@
-<!-- default badges list -->
-[![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T190370)
-[![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
-<!-- default badges end -->
-<!-- default file list -->
-*Files to look at*:
+# Web Reporting ASP.NET MVC Application with End-User Report Designer and Report Database Storage
 
-* [DesignerController.cs](./CS/DXWebApplication_ReportDesigner/Controllers/DesignerController.cs) (VB: [DesignerController.vb](./VB/DXWebApplication_ReportDesigner/Controllers/DesignerController.vb))
-* **[CustomReportStorageWebExtension.cs](./CS/DXWebApplication_ReportDesigner/CustomReportStorageWebExtension.cs) (VB: [CustomReportStorageWebExtension.vb](./VB/DXWebApplication_ReportDesigner/CustomReportStorageWebExtension.vb))**
-* [ReportEntity.cs](./CS/DXWebApplication_ReportDesigner/DAL/ReportEntity.cs) (VB: [ReportEntity.vb](./VB/DXWebApplication_ReportDesigner/DAL/ReportEntity.vb))
-* [SessionFactory.cs](./CS/DXWebApplication_ReportDesigner/DAL/SessionFactory.cs) (VB: [SessionFactory.vb](./VB/DXWebApplication_ReportDesigner/DAL/SessionFactory.vb))
-* [Global.asax.cs](./CS/DXWebApplication_ReportDesigner/Global.asax.cs) (VB: [Global.asax.vb](./VB/DXWebApplication_ReportDesigner/Global.asax.vb))
-* [DesignModel.cs](./CS/DXWebApplication_ReportDesigner/Models/DesignModel.cs) (VB: [DesignModel.vb](./VB/DXWebApplication_ReportDesigner/Models/DesignModel.vb))
-* [IndexModel.cs](./CS/DXWebApplication_ReportDesigner/Models/IndexModel.cs) (VB: [IndexModel.vb](./VB/DXWebApplication_ReportDesigner/Models/IndexModel.vb))
-* [ReportModel.cs](./CS/DXWebApplication_ReportDesigner/Models/ReportModel.cs) (VB: [ReportModel.vb](./VB/DXWebApplication_ReportDesigner/Models/ReportModel.vb))
-* [Design.cshtml](./CS/DXWebApplication_ReportDesigner/Views/Designer/Design.cshtml)
-* [Index.cshtml](./CS/DXWebApplication_ReportDesigner/Views/Designer/Index.cshtml)
-<!-- default file list end -->
-# How to integrate the Web Report Designer into an MVC web application
+This example includes [Web End-User Report Designer](https://docs.devexpress.com/XtraReports/400216/web-reporting/asp-net-mvc-reporting/end-user-report-designer) that uses an SQLite database to store reports. 
 
+The Web Report Designer uses the [ReportStorageWebExtension](https://documentation.devexpress.com/XtraReports/clsDevExpressXtraReportsWebExtensionsReportStorageWebExtensiontopic.aspx) to manage reports.
 
-This example demonstrates how you can integrate the <strong>Web Report Designer</strong> into your web application. The application contains a simple report catalog, allowing you to add, delete, and edit reports whose layout data is stored in a custom data storage (i.e., an MS SQL database).
-<p> </p>
-<p>Additionally, this example demonstrates how you can add custom commands to the report designer menu at runtime to provide better integration with your application. In the example, the custom <strong>Save&Close</strong> menu command is introduced, which redirects you to the catalog page after saving the report.</p>
-<p> <br><strong>Important note:</strong> Starting with version <strong>15.2,</strong> the <a href="https://documentation.devexpress.com/XtraReports/clsDevExpressXtraReportsWebExtensionsReportStorageWebExtensiontopic.aspx">ReportStorageWebExtension</a> is used to manage the reports storage for the Web Report Designer instead of the controller actions. </p>
+After you run the application, select a report in the list box. The list box displays the names of the reports stored in the database:
 
-<br/>
+![](Images/report-catalog.png)
 
+Click **Run Designer** to invoke the End-User Report Designer for the selected report. You can edit a report, save it to a database, and exit Designer to return to the report catalog.
 
+![](Images/report-designer.png)
+
+## Files to Look At  
+
+ - [HomeController.cs](CS/Mvc_DbStorage_Sample/Controllers/HomeController.cs) (VB: [DesignerController.vb](VB/Mvc_DbStorage_Sample_VB/Controllers/HomeController.vb))  
+ - [CustomReportStorageWebExtension.cs](CS/Mvc_DbStorage_Sample/Services/CustomReportStorageWebExtension.cs) (VB: [CustomReportStorageWebExtension.vb](VB/Mvc_DbStorage_Sample_VB/Services/CustomReportStorageWebExtension.vb))  
+ - [ReportEntity.cs](CS/Mvc_DbStorage_Sample/DAL/ReportEntity.cs) (VB: [ReportEntity.vb](VB/Mvc_DbStorage_Sample_VB/DAL/ReportEntity.vb))  
+ - [SessionFactory.cs](CS/Mvc_DbStorage_Sample/DAL/SessionFactory.cs) (VB: [SessionFactory.vb](VB/Mvc_DbStorage_Sample_VB/DAL/SessionFactory.vb))  
+ - [Global.asax.cs](CS/Mvc_DbStorage_Sample/Global.asax.cs) (VB: [Global.asax.vb](VB/Mvc_DbStorage_Sample_VB/Global.asax.vb))  
+ - [DesignModel.cs](CS/Mvc_DbStorage_Sample/Models/DesignModel.cs) (VB: [DesignModel.vb](VB/Mvc_DbStorage_Sample_VB/Models/DesignModel.vb))  
+ - [IndexModel.cs](CS/Mvc_DbStorage_Sample/Models/IndexModel.cs) (VB: [IndexModel.vb](VB/Mvc_DbStorage_Sample_VB/Models/IndexModel.vb))  
+ - [ReportModel.cs](CS/Mvc_DbStorage_Sample/Models/ReportModel.cs) (VB: [ReportModel.vb](VB/Mvc_DbStorage_Sample_VB/Models/ReportModel.vb))  
+ - [Design.cshtml](CS/Mvc_DbStorage_Sample/Views/Home/Designer.cshtml) (VB:[Design.vbhtml](VB/Mvc_DbStorage_Sample_VB/Views/Home/Designer.vbhtml))  
+ - [Index.cshtml](CS/Mvc_DbStorage_Sample/Views/Home/Index.cshtml) (VB: [Index.vbhtml](VB/Mvc_DbStorage_Sample_VB/Views/Home/Index.vbhtml))
+
+ ## Documentation
+
+- [End-User Report Designer in ASP.NET MVC Applications](https://docs.devexpress.com/XtraReports/400216/web-reporting/asp-net-mvc-reporting/end-user-report-designer-in-asp-net-mvc-applications)
+- [DevExpress Data Library](https://docs.devexpress.com/CoreLibraries/17541/devexpress-data-library)
+ - [Add a Report Storage](https://docs.devexpress.com/XtraReports/400204/web-reporting/asp-net-mvc-reporting/end-user-report-designer/add-a-report-storage)
+
+ ## More Examples
+
+ - [How to Implement a Custom Report Storage](https://github.com/DevExpress-Examples/reporting-winforms-custom-report-storage)
+ - [Reporting for Web Forms - Report Designer with Report Storage and Custom Command](https://github.com/DevExpress-Examples/reporting-web-forms-designer-storage)
+ - [Reporting for WPF - How to Implement a Report Storage]()https://github.com/DevExpress-Examples/Reporting_wpf-end-user-report-designer-how-to-implement-a-report-storage-t292945
