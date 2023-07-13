@@ -1,0 +1,26 @@
+﻿@model DesignModel
+@{
+    ViewBag.Title = "Designer";
+}
+<link rel="stylesheet" type="text/css" href="~/Content/Designer.css" />
+<script type="text/javascript">
+    function reportDesigner_ExitDesigner(s, e) {
+        window.location = '@Url.Action("Index")';
+    }
+</script>
+@{
+    var designer = Html.DevExpress().ReportDesigner(settings => {
+        settings.Name = "reportDesigner";
+        if (Model.DataSource != null) {
+            settings.DataSources.Add("Categories", Model.DataSource);
+        }
+        settings.ClientSideEvents.ExitDesigner = "reportDesigner_ExitDesigner";
+    });
+
+    if (Model.Url != null) {
+        designer.BindToUrl(Model.Url).Render();
+    }
+    else {
+        designer.Bind(new XtraReport()).Render();
+    }
+}

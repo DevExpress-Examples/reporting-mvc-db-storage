@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mvc_DbStorage_Sample", "Mvc_DbStorage_Sample\Mvc_DbStorage_Sample.csproj", "{2579C01B-7B90-47CA-A673-FF0169582655}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2579C01B-7B90-47CA-A673-FF0169582655}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2579C01B-7B90-47CA-A673-FF0169582655}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2579C01B-7B90-47CA-A673-FF0169582655}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2579C01B-7B90-47CA-A673-FF0169582655}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AE057C84-1924-4A05-9243-609A2F8F551B}
+	EndGlobalSection
+EndGlobal

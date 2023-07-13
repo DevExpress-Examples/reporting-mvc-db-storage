@@ -1,1 +1,0 @@
-<%@ Application Codebehind="Global.asax.cs" Inherits="DXWebApplication_ReportDesigner.MvcApplication" Language="C#" %>
