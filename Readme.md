@@ -26,15 +26,15 @@ Click **Run Designer** to invoke the End-User Report Designer for the selected r
  - [Global.asax.cs](CS/Mvc_DbStorage_Sample/Global.asax.cs) (VB: [Global.asax.vb](VB/Mvc_DbStorage_Sample_VB/Global.asax.vb))  
  - [DesignModel.cs](CS/Mvc_DbStorage_Sample/Models/DesignModel.cs) (VB: [DesignModel.vb](VB/Mvc_DbStorage_Sample_VB/Models/DesignModel.vb))  
  - [IndexModel.cs](CS/Mvc_DbStorage_Sample/Models/IndexModel.cs) (VB: [IndexModel.vb](VB/Mvc_DbStorage_Sample_VB/Models/IndexModel.vb))  
- - [ReportModel.cs](CS/Mvc_DbStorage_Sample/Models/ReportModel.cs) (VB: [ReportModel.vb](VB/Mvc_DbStorage_Sample_VB/Models/ReportModel.vb))  
- - [Design.cshtml](CS/Mvc_DbStorage_Sample/Views/Home/Designer.cshtml) (VB:[Design.vbhtml](VB/Mvc_DbStorage_Sample_VB/Views/Home/Designer.vbhtml))  
+ - [ReportModel.cs](CS/Mvc_DbStorage_Sample/Models/ReportModel.cs) (VB: [ReportModel.vb](VB/Mvc_DbStorage_Sample_VB/Models/Reportmodel.vb))  
+ - [Design.cshtml](CS/Mvc_DbStorage_Sample/Views/Home/Designer.cshtml) (VB: [Design.vbhtml](VB/Mvc_DbStorage_Sample_VB/Views/Home/Designer.vbhtml))  
  - [Index.cshtml](CS/Mvc_DbStorage_Sample/Views/Home/Index.cshtml) (VB: [Index.vbhtml](VB/Mvc_DbStorage_Sample_VB/Views/Home/Index.vbhtml))
 
  ## Documentation
 
 - [End-User Report Designer in ASP.NET MVC Applications](https://docs.devexpress.com/XtraReports/400216/web-reporting/asp-net-mvc-reporting/end-user-report-designer-in-asp-net-mvc-applications)
 - [DevExpress Data Library](https://docs.devexpress.com/CoreLibraries/17541/devexpress-data-library)
- - [Add a Report Storage](https://docs.devexpress.com/XtraReports/400204/web-reporting/asp-net-mvc-reporting/end-user-report-designer/add-a-report-storage)
+- [Add a Report Storage](https://docs.devexpress.com/XtraReports/400204/web-reporting/asp-net-mvc-reporting/end-user-report-designer/add-a-report-storage)
 
  ## More Examples
 
