@@ -20,16 +20,16 @@ Click **Run Designer** to invoke the End-User Report Designer for the selected r
 
 ## Files to Review
 
- - [HomeController.cs](CS/Mvc_DbStorage_Sample/Controllers/HomeController.cs) (VB: [DesignerController.vb](VB/Mvc_DbStorage_Sample_VB/Controllers/HomeController.vb))  
- - [CustomReportStorageWebExtension.cs](CS/Mvc_DbStorage_Sample/Services/CustomReportStorageWebExtension.cs) (VB: [CustomReportStorageWebExtension.vb](VB/Mvc_DbStorage_Sample_VB/Services/CustomReportStorageWebExtension.vb))  
- - [ReportEntity.cs](CS/Mvc_DbStorage_Sample/DAL/ReportEntity.cs) (VB: [ReportEntity.vb](VB/Mvc_DbStorage_Sample_VB/DAL/ReportEntity.vb))  
- - [SessionFactory.cs](CS/Mvc_DbStorage_Sample/DAL/SessionFactory.cs) (VB: [SessionFactory.vb](VB/Mvc_DbStorage_Sample_VB/DAL/SessionFactory.vb))  
- - [Global.asax.cs](CS/Mvc_DbStorage_Sample/Global.asax.cs) (VB: [Global.asax.vb](VB/Mvc_DbStorage_Sample_VB/Global.asax.vb))  
- - [DesignModel.cs](CS/Mvc_DbStorage_Sample/Models/DesignModel.cs) (VB: [DesignModel.vb](VB/Mvc_DbStorage_Sample_VB/Models/DesignModel.vb))  
- - [IndexModel.cs](CS/Mvc_DbStorage_Sample/Models/IndexModel.cs) (VB: [IndexModel.vb](VB/Mvc_DbStorage_Sample_VB/Models/IndexModel.vb))  
- - [ReportModel.cs](CS/Mvc_DbStorage_Sample/Models/ReportModel.cs) (VB: [ReportModel.vb](VB/Mvc_DbStorage_Sample_VB/Models/Reportmodel.vb))  
- - [Design.cshtml](CS/Mvc_DbStorage_Sample/Views/Home/Designer.cshtml) (VB: [Design.vbhtml](VB/Mvc_DbStorage_Sample_VB/Views/Home/Designer.vbhtml))  
- - [Index.cshtml](CS/Mvc_DbStorage_Sample/Views/Home/Index.cshtml) (VB: [Index.vbhtml](VB/Mvc_DbStorage_Sample_VB/Views/Home/Index.vbhtml))
+ - [HomeController.cs](CS/Mvc_DbStorage_Sample/Controllers/HomeController.cs)
+ - [CustomReportStorageWebExtension.cs](CS/Mvc_DbStorage_Sample/Services/CustomReportStorageWebExtension.cs) 
+ - [ReportEntity.cs](CS/Mvc_DbStorage_Sample/DAL/ReportEntity.cs)
+ - [SessionFactory.cs](CS/Mvc_DbStorage_Sample/DAL/SessionFactory.cs)
+ - [Global.asax.cs](CS/Mvc_DbStorage_Sample/Global.asax.cs)
+ - [DesignModel.cs](CS/Mvc_DbStorage_Sample/Models/DesignModel.cs) 
+ - [IndexModel.cs](CS/Mvc_DbStorage_Sample/Models/IndexModel.cs) 
+ - [ReportModel.cs](CS/Mvc_DbStorage_Sample/Models/ReportModel.cs) 
+ - [Design.cshtml](CS/Mvc_DbStorage_Sample/Views/Home/Designer.cshtml) 
+ - [Index.cshtml](CS/Mvc_DbStorage_Sample/Views/Home/Index.cshtml)
 
  ## Documentation
 
@@ -49,3 +49,4 @@ Click **Run Designer** to invoke the End-User Report Designer for the selected r
 
 (you will be redirected to DevExpress.com to submit your response)
 <!-- feedback end -->
+
