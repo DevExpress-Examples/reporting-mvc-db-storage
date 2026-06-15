@@ -183,33 +183,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\Designer.css" />
-    <Content Include="Content\Index.css" />
-    <Content Include="Content\Site.css" />
-    <Content Include="Global.asax" />
-    <Content Include="Scripts\ace.js" />
-    <Content Include="Scripts\cldr.event.js" />
-    <Content Include="Scripts\cldr.js" />
-    <Content Include="Scripts\cldr.supplemental.js" />
-    <Content Include="Scripts\cldr.unresolved.js" />
-    <Content Include="Scripts\ext-language_tools.js" />
-    <Content Include="Scripts\globalize.currency.js" />
-    <Content Include="Scripts\globalize.date.js" />
-    <Content Include="Scripts\globalize.js" />
-    <Content Include="Scripts\globalize.message.js" />
-    <Content Include="Scripts\globalize.number.js" />
-    <Content Include="Scripts\jquery.js" />
-    <Content Include="Scripts\jquery.min.js" />
-    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
-    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
-    <Content Include="Scripts\knockout-3.3.0.debug.js" />
-    <Content Include="Scripts\knockout-3.3.0.js" />
-    <Content Include="Scripts\modernizr-2.6.2.js" />
-    <Content Include="App_Data\nwind.db">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <Content Include="App_Data\reportsData.db">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
